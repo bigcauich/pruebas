@@ -1,0 +1,26 @@
+@media only screen and (max-width: 991px) {
+
+.navbar-custom{
+	text-align: center;
+}
+
+nav .navbar-nav li a{
+
+  font-size: 30px;
+  }
+
+.navbar-toggler-icon{
+  font-size: 30px;
+}
+
+
+.divisorizquierda{
+      border-left: 0px solid #fff;
+}
+
+.footerimg img{
+  width: 50px;
+}
+
+}
+

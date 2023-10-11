@@ -1,0 +1,307 @@
+body {
+  font-family: 'CreatoDisplay-Regular', sans-serif!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: black;
+  background-color: #ecebdc!important;
+}
+
+body {
+  padding-top: 48px;
+  min-height: 100%;
+}
+  .affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+  }
+.navbar-custom { 
+ background-color: #f3f3f3;  
+    font-weight: 400;
+    padding: 10px 20px;
+}
+nav .navbar-nav li a{
+  color: black;
+  font-size: 20px;
+  padding-left:5px;
+  padding-right:5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-brand img{
+    width: 120px;
+
+}
+
+.navbar-toggler-icon{
+  color: black;
+  font-size: 25px;
+  margin-top: 3px;
+}
+
+
+#mc_embed_signup {
+    background: transparent;
+    clear: left;
+    font: inherit;
+    width: 100%;
+}
+#mc_embed_signup form {
+    padding: 10px 0 10px 0;
+}
+
+#mc_embed_signup input.email {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: solid none solid solid;
+    border-width: 0 0 2px;
+    border-color: #000 #000 #000;
+    box-shadow: none;
+    background-color: hsla(0,0%,100%,0);
+    color: black;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+#mc_embed_signup input.email:focus {
+        outline:none !important;
+    }
+#mc_embed_signup input.text {
+    font-size: 20px;
+    font-weight: bold;
+    border-style: solid none solid solid;
+    border-width: 0 0 1px;
+    border-color: #000 #000 #000;
+    box-shadow: none;
+    background-color: hsla(0,0%,100%,0);
+    color: black;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+#mc_embed_signup input.text:focus {
+        outline:none !important;
+    }
+#mc_embed_signup .clear {
+    color: black;
+    font-size: 20px;
+}
+#mc_embed_signup input[type="submit"] {
+    min-height: auto;
+}
+
+#mc_embed_signup textarea.text{
+
+  font-size: 20px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0 none;
+  width: 100%;
+  outline: none;
+  height: 100%;
+    border-style: solid none solid solid;
+    border-width: 0 0 2px;
+    border-color: #000 #000 #000;
+    box-shadow: none;
+    color: black;
+    box-sizing: border-box;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+::-webkit-resizer {
+  display: none;
+}
+
+.footerimg img{
+  width: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 15px;
+}
+.footerimg a:hover{
+  text-decoration: none;
+}
+
+.divisorderecha{
+      border-right: 1px solid #5c5c5b;
+}
+#presave {
+    background-color: #d6dadb;
+}
+.hashtags{
+  font-size: 40px;
+  text-align: center;
+}
+.imagenpresave{
+  align-items: center;
+}
+
+.presavetext{
+   font-size: 10px;
+   line-height: 15px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+
+.blog img{
+  width: 200px;
+}
+.divisorizquierda{
+      border-left: 2px solid #fff;
+}
+.portada img{
+  width: 250px;
+}
+
+
+.botones {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #fff;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@media (min-width: 768px) {
+  .botones {
+    min-width: 170px;
+  }
+}
+.botones a{
+  color: white;
+  text-decoration: none;
+}
+.botones a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.botones2 {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #fff;
+  font-size: 15px;
+  height: 24px;
+  justify-content: center;
+  text-transform: uppercase;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@media (min-width: 768px) {
+  .botones2 {
+    min-width: 170px;
+  }
+}
+
+.botones2 a{
+  color: white;
+  text-decoration: none;
+}
+.botones2 a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.botones3 {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #000;
+  font-weight: bold;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 25px;
+/*  height: 48px;*/
+  justify-content: center;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#poemas{
+  margin-left: auto;
+    margin-right: auto;
+    max-width: 90rem;
+}
+.poema{
+  font-family: 'KGMidnightMemories', sans-serif;
+font-size: 20px;
+text-align: justify;
+}
+.infopoema{
+  text-align: right;
+  font-size: 12px;
+}
+.infopoema2{
+  font-size: 12px;
+}
+.poematitulo{
+ font-family: 'MyUglyHandwriting-Regular', sans-serif;
+font-size: 45px;
+font-weight: bold;
+}
+
+.imgpoemas {
+    height: 65px!important ;
+    margin: 15px;
+}
