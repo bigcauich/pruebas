@@ -299,9 +299,12 @@ text-align: justify;
  font-family: 'MyUglyHandwriting-Regular', sans-serif;
 font-size: 45px;
 font-weight: bold;
+line-height: 10px;
 }
 
 .imgpoemas {
     height: 65px!important ;
     margin: 15px;
 }
+.sombra{
+  filter: drop-shadow(3px 2px 0.2rem #bcb9b9);}
