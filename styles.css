@@ -1,0 +1,99 @@
+/* RESET GENERAL */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #004080;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* MAPA CON ASPECT RATIO */
+#mapa-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #004080 url('mapa.jpg') no-repeat center center;
+  background-size: contain;
+}
+
+/* VERSIÓN MÓVIL (reemplaza imagen) */
+@media (max-aspect-ratio: 9/16), (orientation: portrait) {
+  #mapa-container {
+    background: #004080 url('mapa-movil.jpg') no-repeat center center;
+    background-size: contain;
+  }
+}
+
+/* PUNTOS SOBRE EL MAPA */
+.punto {
+  position: absolute;
+  display: inline-block;
+  background: transparent;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  font-size: clamp(10px, 1.2vw, 16px);
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: black;
+}
+
+.punto.respondido {
+  animation: aciertoBounce 0.4s ease;
+}
+
+.punto.fallido {
+  background: transparent;
+  color: #f00;
+}
+
+/* INPUTS INDIVIDUALES PARA LETRAS */
+.input-wrapper {
+  display: inline-flex;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.input-wrapper input {
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  color: black;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.input-wrapper input.fixed {
+  background: transparent;
+  color: black;
+  cursor: default;
+  border-bottom: 2px solid black;
+}
+
+.input-wrapper input.editable {
+  background: transparent;
+}
+
+.mensaje-error {
+  font-size: 0.8em;
+  color: red;
+  font-weight: bold;
+}
+
+@keyframes aciertoBounce {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  50%  { transform: translate(-50%, -50%) scale(1.1); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
