@@ -122,7 +122,7 @@ document.querySelectorAll('.punto').forEach(punto => {
                 audioPlayer.play();
               } else {
                 punto.classList.add('fallido');
-                punto.innerHTML = `<span class="mensaje-error">Palabra incorrecta. Haz clic para intentar de nuevo.</span>`;
+                punto.innerHTML = `<span class="mensaje-error">Haz click para intentar de nuevo.</span>`;
                 puntoActivo = null;
                 wrapperActivo = null;
               }
