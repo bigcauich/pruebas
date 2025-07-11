@@ -1,0 +1,253 @@
+/* === Reset básico y fuente === */
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Video de fondo mejorado === */
+video.bg-video {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  
+  /* Configuración esencial para reproducción */
+  display: block;
+  background: #000;
+  
+  /* Técnica de respaldo */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Solución para iOS */
+@supports (-webkit-touch-callout: none) {
+  video.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+  video.bg-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (orientation: landscape) {
+  video.bg-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* === Contenedor principal === */
+.overlay {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* === Imagen de texto decorativo === */
+.texto-img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* === Logo debajo del texto === */
+.logo-img {
+  width: 30%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* === Contenedor de la polaroid === */
+.polaroid-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Marco de la polaroid === */
+.polaroid-frame {
+  position: relative;
+  width: 100%;
+  max-width: 675px;
+  aspect-ratio: 1080 / 1350;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 20px 20px 80px 20px;
+}
+
+/* === Cuadro negro donde va la imagen === */
+.polaroid-frame::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 80px;
+  background: #000;
+  z-index: 1;
+}
+
+/* === Imagen cargada === */
+.polaroid-frame img.preview {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 100px);
+  object-fit: cover;
+  z-index: 2;
+  display: none;
+}
+
+/* === Botones === */
+.boton-generar {
+  width: 70%;
+  height: auto;
+  margin-top: 1rem;
+  transition: none !important;
+}
+
+/* === Input file oculto === */
+#imageInput {
+  display: none;
+}
+
+/* === Contenedor de YouTube === */
+.youtube-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.youtube-icon {
+  width: 60px;
+  height: auto;
+}
+
+
+/* === Layout de columnas === */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.izquierdo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Media Queries === */
+@media (max-width: 992px) {
+  .overlay {
+    padding: 1rem;
+  }
+  
+  .texto-img {
+    width: 90%;
+  }
+  
+  .logo-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 1rem;
+  }
+  
+  .texto-img {
+    width: 95%;
+  }
+  
+  .logo-img {
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .polaroid-frame {
+    max-width: 500px;
+  }
+  
+  .boton-generar {
+    width: 80%;
+  }
+  
+  .youtube-container {
+    margin-top: 1.5rem;
+  }
+  
+  .youtube-icon {
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay {
+    padding: 0.5rem;
+  }
+  
+  .logo-img {
+    width: 70%;
+  }
+  
+  .polaroid-frame {
+    max-width: 350px;
+    padding: 15px 15px 60px 15px;
+  }
+  
+  .polaroid-frame::before {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 60px;
+  }
+  
+  .polaroid-frame img.preview {
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: calc(100% - 75px);
+  }
+  
+  .youtube-container {
+    margin-top: 1rem;
+  }
+}
