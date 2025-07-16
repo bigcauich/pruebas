@@ -18,11 +18,9 @@ video.bg-video {
   object-fit: cover;
   z-index: -1;
   
-  /* Configuración esencial para reproducción */
   display: block;
   background: #000;
   
-  /* Técnica de respaldo */
   min-width: 100%;
   min-height: 100%;
 }
@@ -131,6 +129,41 @@ video.bg-video {
   display: none;
 }
 
+/* === Área del mensaje === */
+.polaroid-message {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 40px;
+  z-index: 3;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid-message input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  color: #333;
+  outline: none;
+  padding: 5px 0;
+  max-width: 100%;
+  font-style: normal;
+}
+
+.polaroid-message input::placeholder {
+  color: #999;
+  font-style: normal;
+  opacity: 1;
+}
+
 /* === Botones === */
 .boton-generar {
   width: 70%;
@@ -155,7 +188,6 @@ video.bg-video {
   width: 60px;
   height: auto;
 }
-
 
 /* === Layout de columnas === */
 .row {
@@ -206,6 +238,16 @@ video.bg-video {
     max-width: 500px;
   }
   
+  .polaroid-message {
+    bottom: 15px;
+    padding: 0 30px;
+    height: 45px;
+  }
+  
+  .polaroid-message input {
+    font-size: 16px;
+  }
+  
   .boton-generar {
     width: 80%;
   }
@@ -245,6 +287,16 @@ video.bg-video {
     left: 15px;
     width: calc(100% - 30px);
     height: calc(100% - 75px);
+  }
+  
+  .polaroid-message {
+    bottom: 10px;
+    padding: 0 20px;
+    height: 30px;
+  }
+  
+  .polaroid-message input {
+    font-size: 14px;
   }
   
   .youtube-container {
